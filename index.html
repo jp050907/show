@@ -1,1 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Nacional - Rio Negro e Solimões</title>
+    
+    <style>
+        /* Estilos para o cabeçalho */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilos para o menu de navegação */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para o banner */
+        .banner img {
+            width: 100%;
+            height: auto;
+            padding-top: 20px;
+            /* Margem superior */
+        }
+
+        /* Estilos para o contêiner de vídeos */
+        .videos-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            /* Espaçamento entre os vídeos */
+            flex-wrap: wrap;
+            /* Ajuste para telas menores */
+        }
+
+        .videos-container iframe {
+            flex: 1;
+            min-width: 50%;
+            /* Ajusta a largura mínima para cada vídeo */
+        }
+
+        /* Estilo para a seção de sobre */
+        #sobre {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Estilo para a seção de sobre */
+        #artistas {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Estilo para a seção de contato */
+        #contato {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Estilo para a seção de galeria */
+        #galeria {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #galeria h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Contêiner da galeria com grade */
+        .galeria-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* 4 imagens por linha */
+            gap: 20px;
+            /* Espaço entre as imagens */
+            max-width: 1200px;
+            /* Limite de largura da galeria */
+            margin: 0 auto;
+            /* Centralizar a galeria */
+        }
+
+        /* Estilos para as imagens */
+        .galeria-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        /* Efeito de zoom ao passar o mouse */
+        .galeria-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilos para o rodapé */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Estilos para as redes sociais no rodapé */
+        .redes-sociais {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            /* Espaço entre os ícones */
+            margin-top: 10px;
+        }
+
+        .redes-sociais a img {
+            width: 30px;
+            /* Tamanho dos ícones */
+            filter: brightness(1) invert(0);
+            /* Para combinar com o fundo escuro */
+        }
+
+        .redes-sociais a:hover img {
+            filter: brightness(0.5);
+            /* Clareia o ícone ao passar o mouse */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Show Nacional - Rio Negro e Solimões</h1>
+        <p>Venha prestigiar a abertura do Natal Luz na Praça da Paz, em Piên</p>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre o Show</a></li>
+                <li><a href="#artistas">Artistas</a></li>
+                <li><a href="#ingressos">Ingressos</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- Banner -->
+        <div class="banner">
+            ___________________________
+            <img src="https://i.ytimg.com/vi/uVrlzT3sJEo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBZXB7cFpmTr0NLKlQJAd9ljeByLg" alt="Foto de Rio Negro e Solimões" width="300">
+        ______________________________
+        </div>
+
+    </header>
+
+    <!-- Seção Sobre o Show -->
+    <section id="sobre">
+        <h2>Sobre o Show</h2>
+        <p>A entrada é gratuita! Venha celebrar com a gente o início do Natal Luz de Piên, um evento que promete
+            encantar toda a família. A grande abertura ficará por conta do show da famosa dupla Rio Negro e Solimões,
+            que trará muita música e emoção para todos os presentes. Este será um momento mágico para marcar o começo da
+            temporada natalina em nossa cidade, reunindo pessoas de todas as idades em um ambiente de festa e alegria.
+        
+        </p>
+        <p>O evento acontecerá no dia <strong>22 de novembro de 2024</strong>, na Praça da Paz, em Piên - PR, e é uma excelente
+            oportunidade para reunir a família e amigos em uma noite inesquecível. A celebração estará repleta de boas
+            energias, e esperamos contar com a presença de todos para tornar essa noite ainda mais especial. Não deixe
+            de participar dessa linda festa de abertura do Natal Luz, repleta de música, tradição e magia!</p>
+
+    </section>
+
+    <!-- Seção Artistas -->
+    <section id="artistas">
+        <h2>Artistas Confirmados</h2>
+        <ul>
+            <li><strong>Rio Negro e Solimões</strong> - A dupla sertaneja que conquistou o Brasil com seus sucessos!
+            </li>
+            <li><strong>Euller e Eduardo</strong> - A dupla sensação de Pìên!</li>
+        </ul>
+
+        <!-- Vídeo do YouTube -->
+        <div class="artista-video">
+            <iframe width="600" height="480" src="https://www.youtube.com/embed/CWk7e39jPFs" title="Rionegro &amp; Solimões - Ninguém Faz Igual | DVD A História Continua" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe width="600" height="480" src="https://www.youtube.com/embed/6AI_5YRdc94" title="Rionegro &amp; Solimões e @LuanPereiraLP -  Cowboy Chora | Ao Vivo em Uberlândia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div><iframe width="500" height="300" src="https://www.youtube.com/embed/EKGvZWuyLDE" title="Rionegro &amp; Solimões - Fivela com Fivela (DVD em Uberlândia Vol. 2)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section> 
+    <!-- Seção Galeria -->
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <p>Veja momentos de shows anteriores e o espírito do Natal Luz em Piên.</p>
+        <div class="galeria-imagens">
+            <img src="https://www.pien.pr.gov.br/storage/images/2022/02/post-1644511555.jpg" alt="Imagem 1 da Feira da Lua"width=460>
+           
+            <img src="https://www.pien.pr.gov.br/storage/images/cache/sexta-feira-tem-feira-da-lua-em-pien-1280-4cdb62d9.jpg" alt="Imagem 9 da Feira da Lua"width=460>
+            <!-- Adicione mais imagens conforme necessário -->
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Para mais informações, entre em contato conosco:</p>
+        <p><strong>Email:</strong> contato@natalpien.com</p>
+        <p><strong>Telefone:</strong> (41) 98765-4321</p>
+    </section>
+
+    <!-- Rodapé da página -->
+    <footer>
+
+        <!-- Redes sociais -->
+        <div class="redes-sociais">
+            <a href="https://www.instagram.com/julinack.__ target="_blank">
+                <img src="https://www.pien.pr.gov.br/themes/prefeitura-web/assets/images/social-instagram.png" alt="Instagram" width="30">
+            </a>
+            <a href="https://www.facebook.com/seu_perfil&quot; target="_blank">
+                <img src="https://www.pien.pr.gov.br/themes/prefeitura-web/assets/images/social-facebook.png" alt="Facebook" width="30">
+            </a>
+            <a href="https://wa.me/seu_numero&quot; target="_blank">
+                <img src="data:image/jpeg;base64,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" alt="WhatsApp" width="30">
+            </a>
+        </div>
+
+        <p>&copy; Professor Lourenço. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
